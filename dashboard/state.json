@@ -14,7 +14,7 @@
         "folds_total": 3,
         "current_fold_epoch": 4,
         "epochs_per_fold": 4,
-        "minutes_per_epoch": 67.8,
+        "minutes_per_epoch": 68.1,
         "remaining": "—",
         "eta_clock": "—",
         "latest_monitor_f1": 0.3452,
@@ -29,7 +29,7 @@
         "folds_total": 5,
         "current_fold_epoch": 4,
         "epochs_per_fold": 4,
-        "minutes_per_epoch": 37.0,
+        "minutes_per_epoch": 37.1,
         "remaining": "—",
         "eta_clock": "—",
         "latest_monitor_f1": 0.3673,
@@ -44,7 +44,7 @@
         "folds_total": 3,
         "current_fold_epoch": 4,
         "epochs_per_fold": 4,
-        "minutes_per_epoch": 49.2,
+        "minutes_per_epoch": 49.4,
         "remaining": "—",
         "eta_clock": "—",
         "latest_monitor_f1": 0.3135,
@@ -110,9 +110,9 @@
   },
   "stage": "TONIGHT_RUN",
   "message": "WWM 5 折长训练（10 轮）：第 5/5 折 · 第 1/10 轮 · 总进度 100.0% · 约 33.4 分钟/轮 · 预计 — 完成",
-  "elapsed_seconds": 14776.554641723633,
+  "elapsed_seconds": 14953.067576408386,
   "budget_seconds": 0.0,
-  "updated_at": "2026-09-29T16:04:05Z",
+  "updated_at": "2026-09-29T16:07:02Z",
   "current": {
     "trial": "anchor_wwm_long_5fold",
     "model_name": "hfl/chinese-roberta-wwm-ext",
@@ -162,7 +162,7 @@
     "config": "{\"model_name\": \"hfl/chinese-roberta-wwm-ext\", \"max_length\": 96, \"batch_size\": 2, \"gradient_accumulation\": 2, \"epochs\": 10, \"learning_rate\": 1.2e-05, \"head_learning_rate\": 0.0008, \"weight_decay\": 0.01, \"trainable_layers\": 4, \"max_span_length\": 10, \"span_top_k\": 10, \"beam_top_k\": 3, \"relation_top_k\": 2, \"span_loss_weight\": 0.65, \"relation_loss_weight\": 1.0, \"seed\": 42, \"device\": \"auto\", \"use_ema\": false, \"ema_decay\": 0.999, \"fgm_epsilon\": 0.0, \"enabled_fixes\": [\"official_offsets\", \"implicit_opinion_sentinel\", \"multi_relation\"], \"use_official_offsets\": true, \"use_implicit_opinion_sentinel\": true, \"preserve_multi_relation\": true}",
     "monitor_f1": 0.4747006566241792,
     "message": "WWM 5 折长训练（10 轮）：第 5/5 折 · 第 1/10 轮 · 总进度 100.0% · 约 33.4 分钟/轮 · 预计 — 完成",
-    "timestamp": 1790697845.519178
+    "timestamp": 1790698022.032151
   },
   "metrics": {
     "precision": 0.31913788626330825,
@@ -809,11 +809,11 @@
     "leaderboard_score": 0.7583
   },
   "events": [
-    "00:04:05 anchor_wwm_3fold: 3/3 folds, last fold epoch 4 f1=0.3452",
-    "00:04:05 anchor_wwm_5fold: 5/5 folds, last fold epoch 4 f1=0.3673",
-    "00:04:05 anchor_macbert_3fold: 3/3 folds, last fold epoch 4 f1=0.3135",
-    "00:04:05 anchor_macbert_5fold: 5/5 folds, last fold epoch 4 f1=0.3277",
-    "00:04:05 anchor_wwm_long_3fold: 3/3 folds, last fold epoch 8 f1=0.4379",
-    "00:04:05 anchor_wwm_long_5fold: 5/5 folds, last fold epoch 10 f1=0.4747"
+    "00:07:01 anchor_wwm_3fold: 3/3 folds, last fold epoch 4 f1=0.3452",
+    "00:07:01 anchor_wwm_5fold: 5/5 folds, last fold epoch 4 f1=0.3673",
+    "00:07:01 anchor_macbert_3fold: 3/3 folds, last fold epoch 4 f1=0.3135",
+    "00:07:01 anchor_macbert_5fold: 5/5 folds, last fold epoch 4 f1=0.3277",
+    "00:07:01 anchor_wwm_long_3fold: 3/3 folds, last fold epoch 8 f1=0.4379",
+    "00:07:01 anchor_wwm_long_5fold: 5/5 folds, last fold epoch 10 f1=0.4747"
   ]
 }
