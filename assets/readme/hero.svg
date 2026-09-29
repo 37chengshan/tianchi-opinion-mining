@@ -50,7 +50,7 @@
   <g id="proof-panel" transform="translate(672 44)">
     <rect width="464" height="312" rx="18" fill="url(#panelFade)" stroke="#1e2836" stroke-width="1.5"/>
     <text x="28" y="40" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="21" font-weight="600" fill="#eef3f8">线上 Leaderboard 轨迹</text>
-    <text x="28" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">strict quadruple F1 · 7 次提交</text>
+    <text x="28" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">strict quadruple F1 · 8 次评测提交</text>
 
     <!-- guides -->
     <g stroke="#1b2430" stroke-width="1">

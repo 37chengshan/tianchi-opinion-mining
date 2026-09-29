@@ -118,8 +118,8 @@ python3 scripts/build_submission.py --experiment anchor_wwm_5fold
 
 本项目在阿里云生态内完成，以下为**实跑记录**（不是兼容性声明）：
 
-- **天池平台**：全部线上分数来自天池评测系统的真实提交（7 次提交，0.7162 → 0.7734），提交文件与 SHA256 全部归档在 `artifacts/submissions/`。
-- **魔搭 ModelScope（阿里云）**：主干权重通过魔搭获取，`scripts/fetch_model.py --source modelscope` 内置 `hfl/rbt3`、`hfl/chinese-roberta-wwm-ext` 的魔搭镜像映射，并与 Hugging Face 路线共享同一套训练代码。
+- **天池平台**：全部线上分数来自天池评测系统的真实提交 —— 共 **8 次评测**（历史 Anchor 0.7162 + 本轮循环 7 次：0.7559 / 0.7583 / 0.7633 / 0.7645 / 0.7668 / 0.7702 / **0.7734**），提交文件与 SHA256 全部归档在 `artifacts/submissions/`。
+- **魔搭 ModelScope（阿里云）**：`scripts/fetch_model.py --source modelscope` 内置 `hfl/rbt3` → `dienstag/rbt3`、`hfl/chinese-roberta-wwm-ext` → `dienstag/chinese-roberta-wwm-ext` 的魔搭镜像映射，下载后校验 `config.json` / tokenizer / 权重文件并输出 JSON 摘要；魔搭与 Hugging Face 两条路线共享同一套训练代码。
 - **通义千问 Qwen3-4B（阿里云开源模型）微调实验**：用 QLoRA（MLX 4-bit）在本赛题数据上做了 fold-1 严格评测 —— 逐 epoch 2 epochs / 2152 iters，输出严格 JSON（含 implicit-O 哨兵），**解析失败 0**，严格 F1 **0.6417**（P 0.6688 / R 0.6167，1077 条验证、2023 条预测、2194 条金标）。结论：本地量化 + 短训条件下 LLM 直抽打不过同等数据的 BERT 集成，因此 Qwen 在本方案中的角色被限定为**长尾/隐式样本的 verifier 与 challenger**，不作为主模型。
 - **PAI-DSW 云端复现路径**（兼容性说明，非本机实跑）：本仓库的训练脚本为纯 PyTorch，可直接在 PAI-DSW Notebook 中以相同命令、相同 fold 划分运行；云端 bf16 LoRA 配方（`run_cloud_lora.yaml`，对齐同赛题公开方案 Qwen3-4B 0.75 / Qwen2.5-7B 0.78 / 32B 0.81 档）与打包脚本 `scripts/make_cloud_bundle.sh` 已随仓库提供。
 
@@ -141,6 +141,7 @@ dashboard/              本地监控（监控 / 数据 / 关于）
 
 ## 文档
 
+- `docs/forum-post-2026-09-29.md` —— **天池论坛方案长文**（结果链、消融、失败清单、复现步骤、云产品使用）
 - `docs/experiment-history-2026-09-29.md` —— 逐次提交与关键发现的完整时间线
 - `docs/cloud-training-plan-2026-09-29.md` —— 云端 GPU 路线与成本/预期对照
 - `docs/superpowers/plans/2026-09-28-anchor-to-0.8-plan.md` —— 冲 0.80 的研究方案
