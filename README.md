@@ -66,9 +66,17 @@ python3 -m pytest -q            # 123 passed, 3 skipped
 python3 scripts/fetch_model.py --model hfl/rbt3 --out models/rbt3
 python3 scripts/fetch_model.py --model hfl/chinese-roberta-wwm-ext --out models/wwm
 
-# 训练 + 严格评估 + 出提交（数据放到 artifacts/data/）
-python3 scripts/run_anchor.py --config configs/anchor_wwm_5fold.json
-python3 scripts/build_submission.py --experiment anchor_wwm_5fold
+# 训练 + 严格评估（数据放入 artifacts/data/ 后；此处为 5 折 × 4 轮）
+python3 scripts/run_anchor.py \
+  --train-reviews artifacts/data/train/TRAIN/Train_reviews.csv \
+  --train-labels  artifacts/data/train/TRAIN/Train_labels.csv \
+  --test-reviews  artifacts/data/test/TEST/Test_reviews.csv \
+  --fold-assignments artifacts/reports/fold_assignments_seed42.json \
+  --model-name hfl/chinese-roberta-wwm-ext \
+  --n-splits 5 --epochs 4 --name wwm_5fold
+
+# 折叠安全融合并生成提交（阈值只在其他折拟合）
+python3 scripts/ensemble_submit.py --run artifacts/experiments/wwm_5fold --name wwm_5fold_ensemble --n-splits 5
 ```
 
 评测与提交都走同一套严格口径：`src/opinion_mining/metrics.py`（四元组精确匹配）+ `scripts/build_submission.py`（行数、空 id、SHA256 校验）。
