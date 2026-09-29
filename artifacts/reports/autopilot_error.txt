@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/cc/code/tianchi-opinion-mining/scripts/autopilot.py", line 432, in main
+    autopilot.run()
+  File "/Users/cc/code/tianchi-opinion-mining/scripts/autopilot.py", line 309, in run
+    analysis_payload[label] = error_analysis(item["oof"].gold, selected["predictions"])
+AttributeError: 'dict' object has no attribute 'gold'

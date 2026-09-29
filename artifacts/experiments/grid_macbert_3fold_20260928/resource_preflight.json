@@ -1,0 +1,22 @@
+{
+  "timestamp": 1790570573.6464489,
+  "pid": 61737,
+  "rss_gb": 0.3506011962890625,
+  "root_rss_gb": 0.3506011962890625,
+  "process_count": 1,
+  "tracked_gb": 0.3509674072265625,
+  "available_gb": 5.1914215087890625,
+  "memory_percent": 67.6,
+  "pressure": "normal",
+  "pressure_free_percent": 66.0,
+  "swap_used_gb": 4.645390625,
+  "swap_total_gb": 6.0,
+  "swap_growth_gb": null,
+  "compressed_gb": 4.3599090576171875,
+  "mps_allocated_gb": 0.0,
+  "mps_driver_gb": 0.0003662109375,
+  "mps_available": true,
+  "mps_status": "ok",
+  "mps_error": null,
+  "memory_budget_gb": 12.0
+}

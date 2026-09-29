@@ -1,0 +1,51 @@
+{
+  "metrics": {
+    "precision": 0.745888423089326,
+    "recall": 0.6975271411338962,
+    "f1": 0.7208976157082748,
+    "champion_f1": 0.7208976157082748
+  },
+  "submission": {
+    "path": "/Users/cc/code/tianchi-opinion-mining/artifacts/submissions/Result.csv",
+    "root_path": "/Users/cc/code/tianchi-opinion-mining/Result.csv",
+    "rows": 5043,
+    "predicted_quadruples": 4930,
+    "empty_ids": 113,
+    "bytes": 163072,
+    "sha256": "f9eac4b6d4ea769e13ea62cac9d3fa9364a70ddf9a0297c8332cc7a80d40d43f",
+    "validator": "passed",
+    "command": "PYTHONPATH=src python3 scripts/autopilot.py --train-zip '/Users/cc/Downloads/初赛训练数据 2019-08-01.zip' --test-zip '/Users/cc/Downloads/初赛测试数据 2019-08-15.zip' --budget-hours 11.0"
+  },
+  "fusion": {
+    "name": "neural_only",
+    "weights": [
+      1.0
+    ],
+    "threshold": 0.727,
+    "implicit_threshold": 0.503
+  },
+  "baseline_trial": {
+    "name": "baseline_5fold_confirm",
+    "model": "statistical_retrieval",
+    "stage": "5-fold",
+    "precision": 0.3626150035385704,
+    "recall": 0.6180639324487334,
+    "f1": 0.4570695807314897,
+    "threshold": 0.921,
+    "implicit_threshold": 0.557,
+    "seconds": 0.0,
+    "config": "variants=1,retrieval_k=4"
+  },
+  "neural_trial": {
+    "name": "neural_5fold_confirm",
+    "model": "mps_rbt3_span_relation",
+    "stage": "5-fold",
+    "precision": 0.745888423089326,
+    "recall": 0.6975271411338962,
+    "f1": 0.7208976157082748,
+    "threshold": 0.727,
+    "implicit_threshold": 0.503,
+    "seconds": 0.0,
+    "config": "{\"batch_size\": 4, \"device\": \"auto\", \"epochs\": 4, \"gradient_accumulation\": 2, \"head_learning_rate\": 0.0008, \"learning_rate\": 2e-05, \"max_length\": 96, \"max_span_length\": 10, \"model_name\": \"hfl/rbt3\", \"relation_loss_weight\": 1.0, \"relation_top_k\": 2, \"seed\": 42, \"span_loss_weight\": 0.65, \"span_top_k\": 10, \"trainable_layers\": 2, \"weight_decay\": 0.01}"
+  }
+}

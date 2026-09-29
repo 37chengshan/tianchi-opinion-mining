@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="wfTitle wfDesc">
+  <title id="wfTitle">训练与推理流水线：五段</title>
+  <desc id="wfDesc">从中文评论到提交文件的五段流水线：encoder、pointer head、约束解码、折安全阈值、概率级融合；底部注明候选金标覆盖 0.977 与 116 个测试。</desc>
+
+  <rect width="1200" height="420" rx="26" fill="#0b0f14"/>
+
+  <g id="stage-1" transform="translate(48 48)">
+    <rect width="204" height="240" rx="16" fill="#111926" stroke="#1e2836" stroke-width="1.5"/>
+    <text x="24" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4f8cff">01</text>
+    <text x="24" y="80" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="23" font-weight="600" fill="#eef3f8">评论原文</text>
+    <text x="24" y="122" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">训练 3229 条</text>
+    <text x="24" y="150" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">测试 2237 条</text>
+    <text x="24" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">6632 gold 四元组</text>
+    <text x="24" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">max_length 96</text>
+  </g>
+
+  <g id="stage-2" transform="translate(272 48)">
+    <rect width="204" height="240" rx="16" fill="#111926" stroke="#1e2836" stroke-width="1.5"/>
+    <text x="24" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4f8cff">02</text>
+    <text x="24" y="80" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="23" font-weight="600" fill="#eef3f8">Encoder</text>
+    <text x="24" y="122" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">WWM / RoBERTa</text>
+    <text x="24" y="150" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">共享层冻结</text>
+    <text x="24" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">max_len 96</text>
+    <text x="24" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">batch 4 × acc 2</text>
+  </g>
+
+  <g id="stage-3" transform="translate(496 48)">
+    <rect width="204" height="240" rx="16" fill="#111926" stroke="#1e2836" stroke-width="1.5"/>
+    <text x="24" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4f8cff">03</text>
+    <text x="24" y="80" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="23" font-weight="600" fill="#eef3f8">Pointer head</text>
+    <text x="24" y="122" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">objectiveness</text>
+    <text x="24" y="150" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">4 指针 + 39 类</text>
+    <text x="24" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">one-stage</text>
+    <text x="24" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">span/relation</text>
+  </g>
+
+  <g id="stage-4" transform="translate(720 48)">
+    <rect width="204" height="240" rx="16" fill="#111926" stroke="#1e2836" stroke-width="1.5"/>
+    <text x="24" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4f8cff">04</text>
+    <text x="24" y="80" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="23" font-weight="600" fill="#eef3f8">约束解码</text>
+    <text x="24" y="122" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">start ≤ end</text>
+    <text x="24" y="150" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">`_` 哨兵 + NMS</text>
+    <text x="24" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">no cross-field</text>
+    <text x="24" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">span ≤ max_len</text>
+  </g>
+
+  <g id="stage-5" transform="translate(944 48)">
+    <rect width="208" height="240" rx="16" fill="#111926" stroke="#47d18a" stroke-width="1.5"/>
+    <text x="24" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#47d18a">05</text>
+    <text x="24" y="80" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="23" font-weight="600" fill="#eef3f8">折安全阈值</text>
+    <text x="24" y="122" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">他折拟合阈值</text>
+    <text x="24" y="150" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="19" fill="#93a1b1">本折仅应用</text>
+    <text x="24" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">+ 概率级融合</text>
+    <text x="24" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#5c6b7d">→ Result.csv</text>
+  </g>
+
+  <!-- connectors -->
+  <g stroke="#2b3746" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 256 168 L 268 168 M 264 163 L 269 168 L 264 173"/>
+    <path d="M 480 168 L 492 168 M 488 163 L 493 168 L 488 173"/>
+    <path d="M 704 168 L 716 168 M 712 163 L 717 168 L 712 173"/>
+    <path d="M 928 168 L 940 168 M 936 163 L 941 168 L 936 173"/>
+  </g>
+
+  <g id="annotation" transform="translate(48 328)">
+    <rect width="1104" height="56" rx="14" fill="#0f1620" stroke="#1b2430" stroke-width="1.5"/>
+    <circle cx="30" cy="28" r="5" fill="#ffb454"/>
+    <text x="50" y="35" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="21" fill="#c8d3e0">诊断结论：候选金标覆盖 0.977，瓶颈在阈值决策而非模型容量</text>
+  </g>
+</svg>

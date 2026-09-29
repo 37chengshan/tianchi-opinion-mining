@@ -1,0 +1,36 @@
+{
+  "name": "anchor_macbert_3fold",
+  "config": {
+    "model_name": "hfl/chinese-macbert-base",
+    "max_length": 96,
+    "batch_size": 2,
+    "gradient_accumulation": 2,
+    "epochs": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "trainable_layers": 4,
+    "max_span_length": 10,
+    "span_top_k": 10,
+    "beam_top_k": 3,
+    "relation_top_k": 2,
+    "span_loss_weight": 0.65,
+    "relation_loss_weight": 1.0,
+    "seed": 42,
+    "device": "auto",
+    "use_ema": false,
+    "ema_decay": 0.999,
+    "fgm_epsilon": 0.0,
+    "enabled_fixes": [
+      "official_offsets",
+      "implicit_opinion_sentinel",
+      "multi_relation"
+    ],
+    "use_official_offsets": true,
+    "use_implicit_opinion_sentinel": true,
+    "preserve_multi_relation": true
+  },
+  "config_hash": "33f25a33efa5695f93246fa867899bb3f2a573d96de1e6582e554dd1120a117c",
+  "fold_assignments": "/Users/cc/code/tianchi-opinion-mining/artifacts/reports/fold_assignments_seed42.json",
+  "composition": "B1+B2+B3 only; no architecture/loss/threshold change"
+}

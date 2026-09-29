@@ -1,0 +1,268 @@
+{
+  "candidate_count": 20168,
+  "candidate_id_count": 3229,
+  "category_metrics": {
+    "价格": {
+      "f1": 0.6877351392024079,
+      "fn": 239,
+      "fp": 176,
+      "gold": 696,
+      "precision": 0.721958925750395,
+      "predicted": 633,
+      "recall": 0.6566091954022989,
+      "tp": 457
+    },
+    "使用体验": {
+      "f1": 0.6528803545051699,
+      "fn": 379,
+      "fp": 326,
+      "gold": 1042,
+      "precision": 0.6703741152679474,
+      "predicted": 989,
+      "recall": 0.6362763915547025,
+      "tp": 663
+    },
+    "其他": {
+      "f1": 0.05194805194805195,
+      "fn": 63,
+      "fp": 10,
+      "gold": 65,
+      "precision": 0.16666666666666666,
+      "predicted": 12,
+      "recall": 0.03076923076923077,
+      "tp": 2
+    },
+    "功效": {
+      "f1": 0.5683397683397683,
+      "fn": 358,
+      "fp": 201,
+      "gold": 726,
+      "precision": 0.6467486818980668,
+      "predicted": 569,
+      "recall": 0.5068870523415978,
+      "tp": 368
+    },
+    "包装": {
+      "f1": 0.6042296072507553,
+      "fn": 95,
+      "fp": 36,
+      "gold": 195,
+      "precision": 0.7352941176470589,
+      "predicted": 136,
+      "recall": 0.5128205128205128,
+      "tp": 100
+    },
+    "尺寸": {
+      "f1": 0.19354838709677416,
+      "fn": 21,
+      "fp": 4,
+      "gold": 24,
+      "precision": 0.42857142857142855,
+      "predicted": 7,
+      "recall": 0.125,
+      "tp": 3
+    },
+    "成分": {
+      "f1": 0.7102803738317758,
+      "fn": 23,
+      "fp": 8,
+      "gold": 61,
+      "precision": 0.8260869565217391,
+      "predicted": 46,
+      "recall": 0.6229508196721312,
+      "tp": 38
+    },
+    "整体": {
+      "f1": 0.8062554300608167,
+      "fn": 502,
+      "fp": 613,
+      "gold": 2822,
+      "precision": 0.790998977156495,
+      "predicted": 2933,
+      "recall": 0.8221119773210489,
+      "tp": 2320
+    },
+    "新鲜度": {
+      "f1": 0.0,
+      "fn": 13,
+      "fp": 0,
+      "gold": 13,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "服务": {
+      "f1": 0.5324675324675324,
+      "fn": 45,
+      "fp": 27,
+      "gold": 86,
+      "precision": 0.6029411764705882,
+      "predicted": 68,
+      "recall": 0.47674418604651164,
+      "tp": 41
+    },
+    "气味": {
+      "f1": 0.6960784313725489,
+      "fn": 83,
+      "fp": 41,
+      "gold": 225,
+      "precision": 0.7759562841530054,
+      "predicted": 183,
+      "recall": 0.6311111111111111,
+      "tp": 142
+    },
+    "物流": {
+      "f1": 0.7772126144455747,
+      "fn": 134,
+      "fp": 85,
+      "gold": 516,
+      "precision": 0.8179871520342612,
+      "predicted": 467,
+      "recall": 0.7403100775193798,
+      "tp": 382
+    },
+    "真伪": {
+      "f1": 0.6874999999999999,
+      "fn": 51,
+      "fp": 49,
+      "gold": 161,
+      "precision": 0.6918238993710691,
+      "predicted": 159,
+      "recall": 0.6832298136645962,
+      "tp": 110
+    }
+  },
+  "config_hash": "bfb4933c65522af69e8b3ddba0fef7ce099f95efa3138f2fa633cb99136ff829",
+  "delta_vs_anchor_same_fold_baseline": null,
+  "f1": 0.7208976157082748,
+  "fn": 2006,
+  "fold_isolation_verified": true,
+  "fold_reports": [
+    {
+      "fold": 1,
+      "score": {
+        "f1": 0.7087458745874587,
+        "fn": 455,
+        "fp": 251,
+        "gold": 1314,
+        "precision": 0.7738738738738739,
+        "predicted": 1110,
+        "recall": 0.6537290715372908,
+        "tp": 859
+      },
+      "valid_ids": 646
+    },
+    {
+      "fold": 2,
+      "score": {
+        "f1": 0.7104567761419404,
+        "fn": 377,
+        "fp": 390,
+        "gold": 1318,
+        "precision": 0.7069872276483846,
+        "predicted": 1331,
+        "recall": 0.7139605462822458,
+        "tp": 941
+      },
+      "valid_ids": 646
+    },
+    {
+      "fold": 3,
+      "score": {
+        "f1": 0.7191100516487883,
+        "fn": 420,
+        "fp": 287,
+        "gold": 1325,
+        "precision": 0.7592281879194631,
+        "predicted": 1192,
+        "recall": 0.6830188679245283,
+        "tp": 905
+      },
+      "valid_ids": 646
+    },
+    {
+      "fold": 4,
+      "score": {
+        "f1": 0.7268445839874411,
+        "fn": 422,
+        "fp": 274,
+        "gold": 1348,
+        "precision": 0.7716666666666666,
+        "predicted": 1200,
+        "recall": 0.6869436201780416,
+        "tp": 926
+      },
+      "valid_ids": 646
+    },
+    {
+      "fold": 5,
+      "score": {
+        "f1": 0.7381305637982195,
+        "fn": 332,
+        "fp": 374,
+        "gold": 1327,
+        "precision": 0.7268078889700511,
+        "predicted": 1369,
+        "recall": 0.7498116051243406,
+        "tp": 995
+      },
+      "valid_ids": 645
+    }
+  ],
+  "fp": 1576,
+  "gold": 6632,
+  "name": "anchor_same_fold_baseline",
+  "oof_candidates_path": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/anchor_same_fold_baseline/oof_candidates.json",
+  "precision": 0.745888423089326,
+  "predicted": 6202,
+  "recall": 0.6975271411338962,
+  "report_path": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/anchor_same_fold_baseline/report.json",
+  "state_metrics": {
+    "dual-implicit": {
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "gold": 0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "explicit": {
+      "f1": 0.6933416692716474,
+      "fn": 616,
+      "fp": 365,
+      "gold": 1725,
+      "precision": 0.7523744911804613,
+      "predicted": 1474,
+      "recall": 0.6428985507246376,
+      "tp": 1109
+    },
+    "implicit-A": {
+      "f1": 0.7433160731269153,
+      "fn": 1218,
+      "fp": 1211,
+      "gold": 4735,
+      "precision": 0.7438663282571912,
+      "predicted": 4728,
+      "recall": 0.742766631467793,
+      "tp": 3517
+    },
+    "implicit-O": {
+      "f1": 0.0,
+      "fn": 172,
+      "fp": 0,
+      "gold": 172,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "tp": 0
+    }
+  },
+  "thresholds": {
+    "explicit": 0.727,
+    "implicit": 0.503
+  },
+  "tp": 4626
+}

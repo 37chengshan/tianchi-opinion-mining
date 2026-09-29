@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "name": "wwm",
+      "path": "artifacts/experiments/anchor_wwm_3fold/oof_candidates.json"
+    }
+  ],
+  "weights": null,
+  "bonus": 0.0,
+  "n_splits": 3,
+  "merged_candidates": 771844,
+  "crossfit": {
+    "f1": 0.7458725017773917,
+    "precision": 0.7833084453293513,
+    "recall": 0.7118516284680337,
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.837,
+        "implicit_threshold": 0.827,
+        "f1": 0.7299850820487321
+      },
+      {
+        "fold": 2,
+        "threshold": 0.837,
+        "implicit_threshold": 0.785,
+        "f1": 0.7436789607979587
+      },
+      {
+        "fold": 3,
+        "threshold": 0.858,
+        "implicit_threshold": 0.78,
+        "f1": 0.7628294036061026
+      }
+    ]
+  },
+  "in_sample_reference_not_strict": {
+    "f1": 0.7492962152017517,
+    "threshold": 0.837,
+    "implicit_threshold": 0.785
+  },
+  "per_source": {
+    "wwm": {
+      "path": "artifacts/experiments/anchor_wwm_3fold/oof_candidates.json",
+      "crossfit_f1": 0.7450205501106544,
+      "in_sample_f1_not_strict": 0.7491979028092965
+    }
+  },
+  "overlap": {
+    "tp_intersection": 0,
+    "union_tp": 0
+  }
+}

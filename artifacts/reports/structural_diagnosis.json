@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-28",
+  "status": "analysis_only_no_training_started",
+  "headline": "Relation head scores anchor-token pairs, not spans; no no-relation modeling",
+  "code_evidence": {
+    "training_relation_path": "grid_trainer.py:189 -> RelationHead.grid_logits(hidden)",
+    "grid_logits_uses": "hidden[:, a_start] and hidden[:, o_start] only; span end ignored",
+    "span_pooling_implemented_but_unwired": "grid_model.py:478-492 _pair_contexts pooling; pair_logits line 507; pair_relation_loss line 695 - none called by trainer or decoder",
+    "no_relation_class": false,
+    "decode_class_rule": "unconditional top-2 per cell (relation_top_k=2)",
+    "decode_floor": 0.05
+  },
+  "candidate_decomposition_v1": {
+    "total_candidates": 53259,
+    "pair_and_class_correct": 5828,
+    "pair_correct_class_wrong": 2489,
+    "pair_wrong_entirely": 44942,
+    "pair_wrong_share": 0.844
+  },
+  "negative_coverage": {
+    "grid_cells_per_review_L128": 16384,
+    "gold_positives_per_review_avg": 2.05,
+    "negative_ratio": 3.0,
+    "sampled_negatives_per_review_batch2": 12,
+    "unsupervised_negative_cell_share": 0.9996
+  },
+  "pair_precision_by_threshold_v1": {
+    "0.5": 0.436,
+    "0.8": 0.569,
+    "0.9": 0.614,
+    "0.95": 0.626,
+    "0.99": 0.729,
+    "cells_above_0.5_share": 0.316
+  },
+  "oracle_decomposition": {
+    "v1_calibrated_f1": 0.6252,
+    "wide_calibrated_f1": 0.6059,
+    "v1_top1_class_per_cell_f1": 0.6261,
+    "v1_upper_bound_perfect_pair_filter": 0.886,
+    "wide_upper_bound_perfect_pair_filter": 0.9012,
+    "conditional_class_accuracy_given_correct_pair": 0.9264,
+    "gold_pair_recall": 0.8489
+  },
+  "threshold_scan_v1_top1": {
+    "0.5": 0.5433,
+    "0.6": 0.5792,
+    "0.7": 0.6003,
+    "0.8": 0.6081,
+    "0.9": 0.4247,
+    "best_single_threshold": 0.8,
+    "best_single_threshold_f1": 0.6081,
+    "calibrated_two_threshold_f1": 0.6252,
+    "conclusion": "no single threshold separates positives from negatives"
+  },
+  "proposed_framework": {
+    "P0_span_aware_relation_scoring": "Score candidate pairs with pooled span representations (pair_logits path) instead of start-token interaction",
+    "P0_explicit_no_relation": "Add background gate logit for pair validity plus raise and stratify negative sampling (ratio 20-50 or full grid at L<=64)",
+    "P1_decode_tightening": "Per-class thresholds instead of unconditional top-2; calibrated pair gate replaces min_relation_score 0.05",
+    "P2_loss_rebalance": "Recompute pos_weight from sampled ratio; retune boundary_loss weight after span-aware head; implicit weight stays in {1.0,1.5,2.0}",
+    "explicitly_rejected": [
+      "wider decoding as the fix (oracle up, F1 down)",
+      "global threshold brute force (best single threshold below calibrated)",
+      "new backbones, seed sweeps, RBT3 retraining"
+    ]
+  },
+  "gates": {
+    "v2_vs_v1_strict_f1_min_delta": 0.015,
+    "or_pair_precision_at_0.8_target": 0.75,
+    "fallback": "one V2.1 patch only, then proceed to Task 4 per locked plan"
+  },
+  "archived_v1_screening": {
+    "rbt3": 0.5504,
+    "macbert": 0.6154,
+    "wwm": 0.6252
+  }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="srTitle srDesc">
+  <title id="srTitle">章节：证据</title>
+  <desc id="srDesc">章节标题「成绩链与失败清单同等重要」，右侧为真实线上 Leaderboard 阶梯：RBT3 0.7162、WWM 5 折 0.7583、加长训练成员 0.7668、四源融合 0.7734。</desc>
+
+  <rect width="1200" height="140" rx="22" fill="#0b0f14"/>
+  <rect x="48" y="42" width="4" height="56" rx="2" fill="#ffb454"/>
+
+  <text x="76" y="60" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#ffb454" letter-spacing="2">EVIDENCE</text>
+  <text x="76" y="102" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="42" font-weight="600" fill="#eef3f8">成绩链与失败清单同等重要</text>
+
+  <g id="leaderboard-ladder" transform="translate(736 40)">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#93a1b1">
+      <text x="0" y="0">RBT3 Anchor</text>
+      <text x="164" y="0">WWM 5 折</text>
+      <text x="292" y="0">+ 长训练成员</text>
+      <text x="432" y="0">四源融合</text>
+    </g>
+    <g>
+      <rect x="0" y="14" width="120" height="8" rx="4" fill="#26313f"/>
+      <rect x="164" y="14" width="152" height="8" rx="4" fill="#2f4a7a"/>
+      <rect x="356" y="14" width="170" height="8" rx="4" fill="#3c6bb5"/>
+      <rect x="562" y="14" width="204" height="8" rx="4" fill="#47d18a"/>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17">
+      <text x="0" y="58" fill="#93a1b1">0.7162</text>
+      <text x="164" y="58" fill="#93a1b1">0.7583</text>
+      <text x="356" y="58" fill="#93a1b1">0.7668</text>
+      <text x="562" y="58" fill="#47d18a">0.7734</text>
+    </g>
+    <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="18" fill="#5c6b7d">线上 Leaderboard（7 次真实提交）</text>
+  </g>
+</svg>

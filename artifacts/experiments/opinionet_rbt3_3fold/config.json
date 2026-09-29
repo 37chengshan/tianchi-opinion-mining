@@ -1,0 +1,27 @@
+{
+  "name": "opinionet_rbt3_3fold",
+  "config": {
+    "model_name": "hfl/rbt3",
+    "max_length": 96,
+    "batch_size": 4,
+    "gradient_accumulation": 2,
+    "epochs": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "trainable_layers": 2,
+    "max_span_length": 10,
+    "span_top_k": 10,
+    "beam_top_k": 3,
+    "relation_top_k": 2,
+    "span_loss_weight": 0.65,
+    "relation_loss_weight": 1.0,
+    "seed": 42,
+    "device": "auto",
+    "use_official_offsets": true,
+    "use_implicit_opinion_sentinel": true,
+    "preserve_multi_relation": true
+  },
+  "head": "OpinionetHead",
+  "fold_assignments": "/Users/cc/code/tianchi-opinion-mining/artifacts/reports/fold_assignments_seed42.json"
+}

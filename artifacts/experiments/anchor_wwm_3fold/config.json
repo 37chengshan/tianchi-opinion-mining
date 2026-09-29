@@ -1,0 +1,33 @@
+{
+  "name": "anchor_wwm_3fold",
+  "config": {
+    "model_name": "hfl/chinese-roberta-wwm-ext",
+    "max_length": 96,
+    "batch_size": 2,
+    "gradient_accumulation": 2,
+    "epochs": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "trainable_layers": 4,
+    "max_span_length": 10,
+    "span_top_k": 10,
+    "beam_top_k": 3,
+    "relation_top_k": 2,
+    "span_loss_weight": 0.65,
+    "relation_loss_weight": 1.0,
+    "seed": 42,
+    "device": "auto",
+    "enabled_fixes": [
+      "official_offsets",
+      "implicit_opinion_sentinel",
+      "multi_relation"
+    ],
+    "use_official_offsets": true,
+    "use_implicit_opinion_sentinel": true,
+    "preserve_multi_relation": true
+  },
+  "config_hash": "2d008a2faf37208bee802051dfdeac18f959d8e3597053db7e8d53fb07e117d5",
+  "fold_assignments": "/Users/cc/code/tianchi-opinion-mining/artifacts/reports/fold_assignments_seed42.json",
+  "composition": "B1+B2+B3 only; no architecture/loss/threshold change"
+}

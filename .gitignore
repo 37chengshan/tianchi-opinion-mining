@@ -1,0 +1,29 @@
+# --- large / derived artifacts (not versioned) ---
+artifacts/data/
+artifacts/**/*.pt
+artifacts/**/*.safetensors
+artifacts/**/*_candidates.json
+artifacts/**/oof_wide_*.json
+artifacts/llm_data/
+artifacts/llm_adapters/
+artifacts/cloud/
+artifacts/experiments/*/fold_*/model.pt
+artifacts/experiments/*/fold_*/history.json
+artifacts/experiments/*/live_progress.json
+artifacts/experiments/*/raw_answers.jsonl
+dashboard/history.json
+logs/
+*.zip
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- local tooling ---
+.codebase-memory/
+.vscode/
+.ai-bridge/*.patch
+.DS_Store

@@ -1,0 +1,179 @@
+{
+  "threshold": 0.733,
+  "implicit_threshold": 0.494,
+  "score": {
+    "precision": 0.7660244535012968,
+    "recall": 0.6234921592279855,
+    "f1": 0.6874480465502909,
+    "correct": 4135,
+    "predicted": 5398,
+    "gold": 6632
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train": 2152,
+      "valid": 1077,
+      "f1_at_monitor_threshold": 0.5815187557182068,
+      "checkpoint": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/neural_3fold_rbt3/fold_1/model.pt",
+      "history": [
+        {
+          "epoch": 1,
+          "step": 538,
+          "loss": 1.8720526107514215,
+          "span_loss": 1.0309074633792874,
+          "relation_loss": 1.0055787317787184,
+          "precision": 0.46790434235368156,
+          "recall": 0.6777575205104831,
+          "f1": 0.5536113179448995,
+          "resource": {
+            "timestamp": 1790532696.4597208,
+            "rss_gb": 0.289703369140625,
+            "available_gb": 2.6475677490234375,
+            "memory_percent": 83.5,
+            "pressure": "normal",
+            "mps_allocated_gb": 0.4239206314086914,
+            "mps_driver_gb": 1.063690185546875,
+            "memory_budget_gb": 8.0
+          }
+        },
+        {
+          "epoch": 2,
+          "step": 1076,
+          "loss": 0.9564131344824365,
+          "span_loss": 0.5496050785157178,
+          "relation_loss": 0.49423299975583734,
+          "precision": 0.4857841638642617,
+          "recall": 0.7242479489516864,
+          "f1": 0.5815187557182068,
+          "resource": {
+            "timestamp": 1790532757.679851,
+            "rss_gb": 0.1931610107421875,
+            "available_gb": 2.217132568359375,
+            "memory_percent": 86.1,
+            "pressure": "normal",
+            "mps_allocated_gb": 0.4284553527832031,
+            "mps_driver_gb": 1.1090087890625,
+            "memory_budget_gb": 8.0
+          }
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "train": 2153,
+      "valid": 1076,
+      "f1_at_monitor_threshold": 0.5905626134301271,
+      "checkpoint": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/neural_3fold_rbt3/fold_2/model.pt",
+      "history": [
+        {
+          "epoch": 1,
+          "step": 539,
+          "loss": 1.8333399627005236,
+          "span_loss": 1.0142460946470555,
+          "relation_loss": 0.9744487844048161,
+          "precision": 0.47706117021276595,
+          "recall": 0.6452338129496403,
+          "f1": 0.5485474006116208,
+          "resource": {
+            "timestamp": 1790532808.662422,
+            "rss_gb": 0.2236175537109375,
+            "available_gb": 2.7561492919921875,
+            "memory_percent": 82.8,
+            "pressure": "normal",
+            "mps_allocated_gb": 0.42049074172973633,
+            "mps_driver_gb": 1.078643798828125,
+            "memory_budget_gb": 8.0
+          }
+        },
+        {
+          "epoch": 2,
+          "step": 1077,
+          "loss": 0.91267203229342,
+          "span_loss": 0.5325581734358379,
+          "relation_loss": 0.4584286527621915,
+          "precision": 0.4951308581862447,
+          "recall": 0.7315647482014388,
+          "f1": 0.5905626134301271,
+          "resource": {
+            "timestamp": 1790532869.625247,
+            "rss_gb": 0.2245941162109375,
+            "available_gb": 2.4627838134765625,
+            "memory_percent": 84.6,
+            "pressure": "normal",
+            "mps_allocated_gb": 0.420682430267334,
+            "mps_driver_gb": 1.105987548828125,
+            "memory_budget_gb": 8.0
+          }
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "train": 2153,
+      "valid": 1076,
+      "f1_at_monitor_threshold": 0.5984654731457801,
+      "checkpoint": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/neural_3fold_rbt3/fold_3/model.pt",
+      "history": [
+        {
+          "epoch": 1,
+          "step": 1077,
+          "loss": 1.6465311756317773,
+          "span_loss": 0.8809126921330156,
+          "relation_loss": 0.9251580570602639,
+          "precision": 0.5086483023702755,
+          "recall": 0.7172538392050587,
+          "f1": 0.5952023988005997,
+          "resource": {
+            "timestamp": 1790532939.9332108,
+            "rss_gb": 0.239990234375,
+            "available_gb": 2.8311004638671875,
+            "memory_percent": 82.3,
+            "pressure": "normal",
+            "mps_allocated_gb": 0.3195822238922119,
+            "mps_driver_gb": 1.127471923828125,
+            "memory_budget_gb": 8.0
+          }
+        },
+        {
+          "epoch": 2,
+          "step": 1077,
+          "loss": 0.8882284762239224,
+          "span_loss": 0.5068991214271286,
+          "relation_loss": 0.4644305345543099,
+          "precision": 0.5024539877300613,
+          "recall": 0.7398373983739838,
+          "f1": 0.5984654731457801,
+          "resource": {
+            "timestamp": 1790533001.123134,
+            "rss_gb": 0.2328643798828125,
+            "available_gb": 2.4640655517578125,
+            "memory_percent": 84.6,
+            "pressure": "normal",
+            "mps_allocated_gb": 0.31956934928894043,
+            "mps_driver_gb": 1.127471923828125,
+            "memory_budget_gb": 8.0
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "model_name": "hfl/rbt3",
+    "max_length": 96,
+    "batch_size": 4,
+    "gradient_accumulation": 2,
+    "epochs": 2,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "trainable_layers": 2,
+    "max_span_length": 10,
+    "span_top_k": 10,
+    "relation_top_k": 2,
+    "span_loss_weight": 0.65,
+    "relation_loss_weight": 1.0,
+    "seed": 42,
+    "device": "auto"
+  }
+}

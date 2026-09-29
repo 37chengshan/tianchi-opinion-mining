@@ -1,0 +1,110 @@
+{
+  "name": "ensemble_wwm5_wwmlong3",
+  "runs": [
+    "artifacts/experiments/anchor_wwm_5fold",
+    "artifacts/experiments/anchor_wwm_long_3fold"
+  ],
+  "n_splits": 5,
+  "weight_candidates": [
+    {
+      "weights": [
+        1.0,
+        1.0
+      ],
+      "crossfit_f1": 0.7693019668337833
+    },
+    {
+      "weights": [
+        1.0,
+        0.7
+      ],
+      "crossfit_f1": 0.7693373354883397
+    },
+    {
+      "weights": [
+        1.0,
+        1.5
+      ],
+      "crossfit_f1": 0.7688650306748468
+    },
+    {
+      "weights": [
+        0.7,
+        1.0
+      ],
+      "crossfit_f1": 0.7685899413761185
+    },
+    {
+      "weights": [
+        1.0,
+        2.0
+      ],
+      "crossfit_f1": 0.767868145409735
+    }
+  ],
+  "chosen_weights": [
+    1.0,
+    0.7
+  ],
+  "crossfit_f1": 0.7693373354883397,
+  "crossfit_detail": {
+    "f1": 0.7693373354883397,
+    "precision": 0.7857255148561547,
+    "recall": 0.7536188178528347,
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.774,
+        "implicit_threshold": 0.764,
+        "f1": 0.7551963048498844
+      },
+      {
+        "fold": 2,
+        "threshold": 0.774,
+        "implicit_threshold": 0.764,
+        "f1": 0.765183752417795
+      },
+      {
+        "fold": 3,
+        "threshold": 0.842,
+        "implicit_threshold": 0.764,
+        "f1": 0.7680991095625243
+      },
+      {
+        "fold": 4,
+        "threshold": 0.847,
+        "implicit_threshold": 0.764,
+        "f1": 0.7737779461917392
+      },
+      {
+        "fold": 5,
+        "threshold": 0.842,
+        "implicit_threshold": 0.764,
+        "f1": 0.7843894899536321
+      }
+    ]
+  },
+  "in_sample_thresholds": {
+    "explicit": 0.847,
+    "implicit": 0.764,
+    "state": {
+      "explicit": 0.847,
+      "implicit-A": 0.764,
+      "implicit-O": 0.717,
+      "dual-implicit": 1.0
+    },
+    "in_sample_f1_not_strict": 0.7706137631742097
+  },
+  "submission": {
+    "path": "/Users/cc/code/tianchi-opinion-mining/artifacts/submissions/candidates/ensemble_wwm5_wwmlong3/Result.csv",
+    "sha256": "b20aa0997a82604c54b4923ade8575a4a29408420f1c1c34e6bba6d9ba50637b",
+    "bytes": 137459,
+    "validation": {
+      "ids": 2237,
+      "rows": 4317,
+      "empty_ids": 141,
+      "predicted_quadruples": 4176
+    }
+  },
+  "candidate_id": "candidate-b20aa0997a82-ac9a430bf2db"
+}

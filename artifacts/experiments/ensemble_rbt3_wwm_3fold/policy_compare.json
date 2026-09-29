@@ -1,0 +1,59 @@
+{
+  "n_splits": 3,
+  "sources": {
+    "rbt3": {
+      "path": "artifacts/experiments/anchor_rbt3_v1_3fold/oof_candidates.json",
+      "f1": 0.7120124804992202,
+      "precision": 0.7375565610859729,
+      "recall": 0.6881785283474066,
+      "tp": 4564,
+      "predicted": 6188
+    },
+    "wwm": {
+      "path": "artifacts/experiments/anchor_wwm_3fold/oof_candidates.json",
+      "f1": 0.7450205501106544,
+      "precision": 0.782890365448505,
+      "recall": 0.7106453558504222,
+      "tp": 4713,
+      "predicted": 6020
+    }
+  },
+  "policies": {
+    "rbt3": {
+      "f1": 0.7120124804992202,
+      "precision": 0.7375565610859729,
+      "recall": 0.6881785283474066,
+      "tp": 4564,
+      "predicted": 6188
+    },
+    "wwm": {
+      "f1": 0.7450205501106544,
+      "precision": 0.782890365448505,
+      "recall": 0.7106453558504222,
+      "tp": 4713,
+      "predicted": 6020
+    },
+    "union": {
+      "f1": 0.7309600862998921,
+      "precision": 0.6987487969201155,
+      "recall": 0.7662846803377563,
+      "tp": 5082,
+      "predicted": 7273
+    },
+    "intersection": {
+      "f1": 0.7253393273969049,
+      "precision": 0.8500506585612969,
+      "recall": 0.6325392038600723,
+      "tp": 4195,
+      "predicted": 4935
+    }
+  },
+  "tp_overlap": {
+    "rbt3|wwm": {
+      "shared_tp": 2633,
+      "left_only_tp": 92,
+      "right_only_tp": 145,
+      "jaccard": 0.9174216027874564
+    }
+  }
+}

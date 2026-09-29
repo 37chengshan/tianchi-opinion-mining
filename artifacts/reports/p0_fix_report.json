@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-09-28T11:22:28+0800",
+  "data": {
+    "train_reviews": 3229,
+    "test_reviews": 2237,
+    "raw_label_spans": 6633,
+    "unique_quadruples": 6632,
+    "implicit_aspect_spans": 4735,
+    "implicit_opinion_spans": 172,
+    "offset_errors": 0,
+    "duplicate_quad_span_rows": 1
+  },
+  "fixed_folds": "artifacts/reports/fold_assignments_seed42.json",
+  "neural_relation_target": "39-class multi-hot relation target with CLS sentinel for implicit A/O",
+  "decoder": "top-k constrained endpoint beam + span-pair NMS",
+  "promotion": "default seed-only evolution disabled; promoted submission writes Result.csv/champion.json/final_report.json",
+  "calibration": {
+    "lofo_oof": {
+      "f1": 0.717316153362665,
+      "precision": 0.7488517060367454,
+      "recall": 0.6883293124246079,
+      "correct": 4565,
+      "predicted": 6096,
+      "gold": 6632,
+      "folds": [
+        {
+          "fold": 1,
+          "f1": 0.7015926236378877,
+          "precision": 0.7807835820895522,
+          "recall": 0.636986301369863,
+          "correct": 837,
+          "predicted": 1072,
+          "gold": 1314
+        },
+        {
+          "fold": 2,
+          "f1": 0.7103369935630442,
+          "precision": 0.708994708994709,
+          "recall": 0.7116843702579666,
+          "correct": 938,
+          "predicted": 1323,
+          "gold": 1318
+        },
+        {
+          "fold": 3,
+          "f1": 0.71658615136876,
+          "precision": 0.7679033649698016,
+          "recall": 0.6716981132075471,
+          "correct": 890,
+          "predicted": 1159,
+          "gold": 1325
+        },
+        {
+          "fold": 4,
+          "f1": 0.7193612774451098,
+          "precision": 0.7787381158167676,
+          "recall": 0.6683976261127597,
+          "correct": 901,
+          "predicted": 1157,
+          "gold": 1348
+        },
+        {
+          "fold": 5,
+          "f1": 0.7367256637168141,
+          "precision": 0.7212996389891697,
+          "recall": 0.7528259231348907,
+          "correct": 999,
+          "predicted": 1385,
+          "gold": 1327
+        }
+      ]
+    },
+    "full_oof_after_shrink": {
+      "f1": 0.7266870924660225,
+      "precision": 0.7585697884205347,
+      "recall": 0.6973763570566948,
+      "correct": 4625,
+      "predicted": 6097,
+      "gold": 6632
+    },
+    "in_sample_reference_not_strict": {
+      "f1": 0.7325927084963231,
+      "precision": 0.7613008130081301,
+      "recall": 0.7059710494571774,
+      "correct": 4682,
+      "predicted": 6150,
+      "gold": 6632
+    }
+  },
+  "current_submission": {
+    "path": "Result.csv",
+    "rows": 5043,
+    "predicted_quadruples": 4930,
+    "empty_ids": 113,
+    "bytes": 163072,
+    "sha256": "f9eac4b6d4ea769e13ea62cac9d3fa9364a70ddf9a0297c8332cc7a80d40d43f",
+    "validator": "passed"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "output": "artifacts/submissions/candidates/anchor_wwm_5fold/Result.csv",
+  "sources": [
+    {
+      "name": "wwm5",
+      "path": "artifacts/experiments/anchor_wwm_5fold/test_candidates.json"
+    }
+  ],
+  "weights": null,
+  "bonus": 0.0,
+  "thresholds": {
+    "explicit": 0.843,
+    "implicit": 0.759,
+    "state": {
+      "explicit": 0.843,
+      "implicit-A": 0.759,
+      "implicit-O": 0.786,
+      "dual-implicit": 1.0
+    }
+  },
+  "candidate_ids_covered": 2237,
+  "predicted_ids": 2102,
+  "predicted_quadruples": 4257,
+  "sha256": "84e0474e404e89ef324d5649bbc28ee21cb6e0522c0151e9f891eadecb7c48e8",
+  "bytes": 139816,
+  "validation": {
+    "ids": 2237,
+    "rows": 4392,
+    "empty_ids": 135,
+    "predicted_quadruples": 4257
+  }
+}

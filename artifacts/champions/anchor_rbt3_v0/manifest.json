@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "candidate_id": "candidate-f9eac4b6d4ea-b384f88e9621",
+  "reproduction_mode": "archived_test_candidate_replay",
+  "repository_root": "../../../",
+  "scores": {
+    "local_oof_f1": 0.7208976157082748,
+    "local_oof_precision": 0.745888423089326,
+    "local_oof_recall": 0.6975271411338962,
+    "online_f1": 0.7162020541,
+    "online_f1_source": "official leaderboard record"
+  },
+  "source_artifacts": {
+    "final_report": "artifacts/reports/final_report.json",
+    "threshold": "artifacts/experiments/neural_5fold_confirm/threshold.json",
+    "oof_candidates": "artifacts/experiments/neural_5fold_confirm/oof_candidates.json",
+    "online_queue": "artifacts/submissions/online_loop/queue.json",
+    "candidate_csv": "artifacts/submissions/candidates/candidate-f9eac4b6d4ea-b384f88e9621/Result.csv",
+    "test_input": "archived fold test_candidates.json maps"
+  },
+  "expected": {
+    "sha256": "f9eac4b6d4ea769e13ea62cac9d3fa9364a70ddf9a0297c8332cc7a80d40d43f",
+    "bytes": 163072,
+    "rows": 5043,
+    "ids": 2237,
+    "predicted_quadruples": 4930,
+    "empty_ids": 113
+  },
+  "thresholds": {
+    "explicit": 0.727,
+    "implicit": 0.503
+  },
+  "aggregation": {
+    "fold_count": 5,
+    "average_present": true,
+    "weights": [1.0, 1.0, 1.0, 1.0, 1.0],
+    "bonus": 0.015
+  },
+  "config": {
+    "model_name": "hfl/rbt3",
+    "max_length": 96,
+    "batch_size": 4,
+    "gradient_accumulation": 2,
+    "epochs": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "trainable_layers": 2,
+    "max_span_length": 10,
+    "span_top_k": 10,
+    "relation_top_k": 2,
+    "span_loss_weight": 0.65,
+    "relation_loss_weight": 1.0,
+    "seed": 42,
+    "device": "auto"
+  },
+  "expected_source_csv": "artifacts/submissions/candidates/candidate-f9eac4b6d4ea-b384f88e9621/Result.csv",
+  "merged_candidates_path": "artifacts/champions/anchor_rbt3_v0/test_candidates_merged.json",
+  "folds": [
+    {
+      "fold": 1,
+      "checkpoint": "artifacts/experiments/neural_5fold_confirm/fold_1/model.pt",
+      "test_candidates": "artifacts/experiments/neural_5fold_confirm/fold_1/test_candidates.json"
+    },
+    {
+      "fold": 2,
+      "checkpoint": "artifacts/experiments/neural_5fold_confirm/fold_2/model.pt",
+      "test_candidates": "artifacts/experiments/neural_5fold_confirm/fold_2/test_candidates.json"
+    },
+    {
+      "fold": 3,
+      "checkpoint": "artifacts/experiments/neural_5fold_confirm/fold_3/model.pt",
+      "test_candidates": "artifacts/experiments/neural_5fold_confirm/fold_3/test_candidates.json"
+    },
+    {
+      "fold": 4,
+      "checkpoint": "artifacts/experiments/neural_5fold_confirm/fold_4/model.pt",
+      "test_candidates": "artifacts/experiments/neural_5fold_confirm/fold_4/test_candidates.json"
+    },
+    {
+      "fold": 5,
+      "checkpoint": "artifacts/experiments/neural_5fold_confirm/fold_5/model.pt",
+      "test_candidates": "artifacts/experiments/neural_5fold_confirm/fold_5/test_candidates.json"
+    }
+  ]
+}

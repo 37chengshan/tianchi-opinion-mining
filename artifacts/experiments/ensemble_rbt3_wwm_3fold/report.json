@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "name": "rbt3",
+      "path": "artifacts/experiments/anchor_rbt3_v1_3fold/oof_candidates.json"
+    },
+    {
+      "name": "wwm",
+      "path": "artifacts/experiments/anchor_wwm_3fold/oof_candidates.json"
+    }
+  ],
+  "weights": null,
+  "bonus": 0.0,
+  "n_splits": 3,
+  "merged_candidates": 1311112,
+  "crossfit": {
+    "f1": 0.7479878096428851,
+    "precision": 0.7763179237631792,
+    "recall": 0.7216525934861279,
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.759,
+        "implicit_threshold": 0.722,
+        "f1": 0.7320827320827321
+      },
+      {
+        "fold": 2,
+        "threshold": 0.722,
+        "implicit_threshold": 0.733,
+        "f1": 0.7481947356161193
+      },
+      {
+        "fold": 3,
+        "threshold": 0.712,
+        "implicit_threshold": 0.733,
+        "f1": 0.7630004601932812
+      }
+    ]
+  },
+  "in_sample_reference_not_strict": {
+    "f1": 0.7496873045653535,
+    "threshold": 0.722,
+    "implicit_threshold": 0.733
+  },
+  "per_source": {
+    "rbt3": {
+      "path": "artifacts/experiments/anchor_rbt3_v1_3fold/oof_candidates.json",
+      "crossfit_f1": 0.7120124804992202,
+      "in_sample_f1_not_strict": 0.7140305924373009
+    },
+    "wwm": {
+      "path": "artifacts/experiments/anchor_wwm_3fold/oof_candidates.json",
+      "crossfit_f1": 0.7450205501106544,
+      "in_sample_f1_not_strict": 0.7491979028092965
+    }
+  },
+  "overlap": {
+    "tp_intersection": 4225,
+    "union_tp": 5151
+  }
+}

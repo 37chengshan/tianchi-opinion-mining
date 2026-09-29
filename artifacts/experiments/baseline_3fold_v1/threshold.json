@@ -1,0 +1,32 @@
+{
+  "threshold": 0.909,
+  "implicit_threshold": 0.569,
+  "score": {
+    "precision": 0.3640529091380652,
+    "recall": 0.6349517490952955,
+    "f1": 0.4627726798175724,
+    "correct": 4211,
+    "predicted": 11567,
+    "gold": 6632
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train": 2152,
+      "valid": 1077,
+      "candidate_rows": 5363
+    },
+    {
+      "fold": 2,
+      "train": 2153,
+      "valid": 1076,
+      "candidate_rows": 5298
+    },
+    {
+      "fold": 3,
+      "train": 2153,
+      "valid": 1076,
+      "candidate_rows": 5604
+    }
+  ]
+}

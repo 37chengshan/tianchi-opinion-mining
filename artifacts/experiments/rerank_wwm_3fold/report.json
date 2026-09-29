@@ -1,0 +1,52 @@
+{
+  "sources": [
+    "artifacts/experiments/anchor_wwm_3fold/oof_candidates.json"
+  ],
+  "n_splits": 3,
+  "max_per_review": 80,
+  "feature_count": 31,
+  "candidate_rows": 256196,
+  "candidate_recall_ceiling": 0.9678829915560917,
+  "oracle_f1_if_perfect_rank": 0.9836794115393457,
+  "threshold_policy": "nested out-of-fold calibration on the remaining folds",
+  "score": {
+    "f1": 0.7464055335354006,
+    "precision": 0.770168404170008,
+    "recall": 0.724065138721351,
+    "tp": 4802,
+    "predicted": 6235,
+    "gold": 6632
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "threshold": 0.4065865387668332,
+      "candidates": 85558,
+      "f1": 0.7288672350791716,
+      "precision": 0.7828362114076399,
+      "recall": 0.6818596171376481,
+      "tp": 1496,
+      "predicted": 1911
+    },
+    {
+      "fold": 2,
+      "threshold": 0.3554074629670889,
+      "candidates": 85286,
+      "f1": 0.7481160082210551,
+      "precision": 0.760092807424594,
+      "recall": 0.7365107913669064,
+      "tp": 1638,
+      "predicted": 2155
+    },
+    {
+      "fold": 3,
+      "threshold": 0.37890415257028764,
+      "candidates": 85352,
+      "f1": 0.7611225188227242,
+      "precision": 0.7690179806362379,
+      "recall": 0.7533875338753387,
+      "tp": 1668,
+      "predicted": 2169
+    }
+  ]
+}

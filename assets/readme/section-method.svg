@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="smTitle smDesc">
+  <title id="smTitle">章节：方法</title>
+  <desc id="smDesc">章节标题「折安全协议决定分数是否可信」，右侧为 5 折示意：4 折训练、1 折被评分。</desc>
+
+  <rect width="1200" height="140" rx="22" fill="#0b0f14"/>
+  <rect x="48" y="42" width="4" height="56" rx="2" fill="#4f8cff"/>
+
+  <text x="76" y="60" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4f8cff" letter-spacing="2">METHOD</text>
+  <text x="76" y="102" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="42" font-weight="600" fill="#eef3f8">折安全协议决定分数是否可信</text>
+
+  <g id="fold-strip" transform="translate(760 46)">
+    <g>
+      <rect x="0" y="0" width="56" height="48" rx="10" fill="#1b2430" stroke="#2b3746" stroke-width="1.5"/>
+      <rect x="68" y="0" width="56" height="48" rx="10" fill="#1b2430" stroke="#2b3746" stroke-width="1.5"/>
+      <rect x="136" y="0" width="56" height="48" rx="10" fill="#1b2430" stroke="#2b3746" stroke-width="1.5"/>
+      <rect x="204" y="0" width="56" height="48" rx="10" fill="#1b2430" stroke="#2b3746" stroke-width="1.5"/>
+      <rect x="272" y="0" width="56" height="48" rx="10" fill="#12233a" stroke="#4f8cff" stroke-width="2"/>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#93a1b1" text-anchor="middle">
+      <text x="28" y="32">1</text><text x="96" y="32">2</text><text x="164" y="32">3</text><text x="232" y="32">4</text>
+    </g>
+    <text x="300" y="32" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#4f8cff">5</text>
+    <text x="0" y="76" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="18" fill="#5c6b7d">他折拟合阈值 → 本折只应用</text>
+  </g>
+</svg>

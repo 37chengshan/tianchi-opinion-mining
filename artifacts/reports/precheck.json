@@ -1,0 +1,17 @@
+{
+  "train_reviews": 3229,
+  "train_quadruples": 6632,
+  "test_reviews": 2237,
+  "resource": {
+    "timestamp": 1790535635.320082,
+    "rss_gb": 0.367523193359375,
+    "available_gb": 6.7495880126953125,
+    "memory_percent": 57.8,
+    "pressure": "normal",
+    "mps_allocated_gb": 0.0,
+    "mps_driver_gb": 0.0003662109375,
+    "memory_budget_gb": 8.0
+  },
+  "train_zip_sha256": "506a8db311d9fcd460a01e067c9d9d7777445ad0d410eab1e35f64f85b486978",
+  "test_zip_sha256": "7c3e6f7cfdad1fb2fe9729d753566b3009bf4aaf917a6381a950b46b30203ab1"
+}

@@ -1,0 +1,29 @@
+{
+  "candidate_id": "ensemble_wwm_v1_v21_pairfilter_3fold_20260928",
+  "method": "WWM V1 predictions filtered by V2.1 grid relation same-(Aspect,Opinion)-pair verifier",
+  "v1_source": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/grid_wwm_3fold_20260928/Result.csv",
+  "v21_source": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/grid_wwm_v21_grid_redecode_3fold_test/test_candidates.json",
+  "v21_state_thresholds": {
+    "explicit": 0.72,
+    "implicit-A": 0.746,
+    "implicit-O": 0.579,
+    "dual-implicit": 1.0
+  },
+  "submission": {
+    "path": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/ensemble_wwm_v1_v21_pairfilter_3fold/Result.csv",
+    "sha256": "654371d4163454c93f00db4226d3ab8af4ff38f8d5bc7c6a5f4cc4814dafca6a",
+    "bytes": 93662,
+    "report": {
+      "ids": 2237,
+      "rows": 3310,
+      "empty_ids": 558,
+      "predicted_quadruples": 2752
+    }
+  },
+  "source_sha256": {
+    "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/grid_wwm_3fold_20260928/Result.csv": "5c08ee6e351767f5e208facbb788e3c587c969aca4a810266cc0ffde3316a5b8",
+    "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/grid_wwm_3fold_20260928/oof_candidates.json": "872fdc5f9007f5c7a8da375e8490dec8f11f97f0f79b843fb51569413eb838b7",
+    "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/grid_wwm_v21_grid_redecode_3fold/oof_candidates.json": "843dab3d39ac5b00672a5809e5a02f455cc4e74687523c8d67018a40a6500a47",
+    "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/grid_wwm_v21_grid_redecode_3fold_test/test_candidates.json": "42daa1fd9ea615213d07fd9337231122174dba5200e8fb163d06474cdaf5830a"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "candidates": "artifacts/experiments/grid_wwm_3fold_20260928/oof_candidates.json",
+  "baseline_f1": 0.6252,
+  "measured": {
+    "f1": 0.6252030319436924,
+    "precision": 0.5671660117878192,
+    "recall": 0.6964716525934861,
+    "tp": 4619.0,
+    "predicted": 8144.0,
+    "gold": 6632.0,
+    "pair_precision": 0.5887445887445888,
+    "pair_recall": 0.7177322074788902,
+    "class_accuracy": 0.9703781512605042,
+    "classes_per_pair": 1.0072974644403216,
+    "median_predicted_per_review": 2.0,
+    "high_conf_pair_precision": 0.569077735478325,
+    "high_conf_pair_support": 8143.0,
+    "median_raw_pairs_per_review": 8.0,
+    "threshold": 0.904,
+    "implicit_threshold": 0.747
+  },
+  "gates": [
+    {
+      "name": "strict F1 delta >= 0.015",
+      "value": 3.0319436924441945e-06,
+      "target": 0.015,
+      "pass": false
+    },
+    {
+      "name": "strict F1 delta >= 0.005 (conditional)",
+      "value": 3.0319436924441945e-06,
+      "target": 0.005,
+      "pass": false
+    },
+    {
+      "name": "pair precision >= 0.75",
+      "value": 0.5887445887445888,
+      "target": 0.75,
+      "pass": false
+    },
+    {
+      "name": "pair recall >= 0.80",
+      "value": 0.7177322074788902,
+      "target": 0.8,
+      "pass": false
+    },
+    {
+      "name": "class accuracy >= 0.95",
+      "value": 0.9703781512605042,
+      "target": 0.95,
+      "pass": true
+    },
+    {
+      "name": "high-conf pair precision >= 0.75",
+      "value": 0.569077735478325,
+      "target": 0.75,
+      "pass": false
+    }
+  ],
+  "promote_to_task4": false,
+  "conditional_review_required": false,
+  "all_gates_pass": false
+}

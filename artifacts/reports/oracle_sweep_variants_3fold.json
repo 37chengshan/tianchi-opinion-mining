@@ -1,0 +1,128 @@
+{
+  "run_dir": "artifacts/experiments/grid_wwm_3fold_20260928",
+  "folds": 3,
+  "configs": {
+    "wide_span2": {
+      "settings": {
+        "span_top_k": 16,
+        "max_span_length": 12,
+        "pair_top_k": 256,
+        "relation_top_k": 2
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "valid_rows": 1077,
+          "oracle_hit": 1989,
+          "oracle_gold": 2194,
+          "oracle_recall": 0.906563354603464,
+          "predicted_quadruples": 37362
+        },
+        {
+          "fold": 2,
+          "valid_rows": 1076,
+          "oracle_hit": 2003,
+          "oracle_gold": 2224,
+          "oracle_recall": 0.9006294964028777,
+          "predicted_quadruples": 29628
+        },
+        {
+          "fold": 3,
+          "valid_rows": 1076,
+          "oracle_hit": 2046,
+          "oracle_gold": 2214,
+          "oracle_recall": 0.924119241192412,
+          "predicted_quadruples": 32008
+        }
+      ],
+      "aggregate": {
+        "oracle_hit": 6038,
+        "oracle_gold": 6632,
+        "oracle_recall": 0.9104342581423401,
+        "predicted_quadruples": 98998
+      }
+    },
+    "wide_span2_ml14": {
+      "settings": {
+        "span_top_k": 20,
+        "max_span_length": 14,
+        "pair_top_k": 400,
+        "relation_top_k": 2
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "valid_rows": 1077,
+          "oracle_hit": 1994,
+          "oracle_gold": 2194,
+          "oracle_recall": 0.9088422971741112,
+          "predicted_quadruples": 44428
+        },
+        {
+          "fold": 2,
+          "valid_rows": 1076,
+          "oracle_hit": 2011,
+          "oracle_gold": 2224,
+          "oracle_recall": 0.904226618705036,
+          "predicted_quadruples": 35038
+        },
+        {
+          "fold": 3,
+          "valid_rows": 1076,
+          "oracle_hit": 2047,
+          "oracle_gold": 2214,
+          "oracle_recall": 0.9245709123757905,
+          "predicted_quadruples": 37343
+        }
+      ],
+      "aggregate": {
+        "oracle_hit": 6052,
+        "oracle_gold": 6632,
+        "oracle_recall": 0.9125452352231604,
+        "predicted_quadruples": 116809
+      }
+    },
+    "narrow_ml12": {
+      "settings": {
+        "span_top_k": 8,
+        "max_span_length": 12,
+        "pair_top_k": 64,
+        "relation_top_k": 2
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "valid_rows": 1077,
+          "oracle_hit": 1894,
+          "oracle_gold": 2194,
+          "oracle_recall": 0.8632634457611669,
+          "predicted_quadruples": 19406
+        },
+        {
+          "fold": 2,
+          "valid_rows": 1076,
+          "oracle_hit": 1907,
+          "oracle_gold": 2224,
+          "oracle_recall": 0.8574640287769785,
+          "predicted_quadruples": 15816
+        },
+        {
+          "fold": 3,
+          "valid_rows": 1076,
+          "oracle_hit": 1946,
+          "oracle_gold": 2214,
+          "oracle_recall": 0.8789521228545619,
+          "predicted_quadruples": 17197
+        }
+      ],
+      "aggregate": {
+        "oracle_hit": 5747,
+        "oracle_gold": 6632,
+        "oracle_recall": 0.866556091676719,
+        "predicted_quadruples": 52419
+      }
+    }
+  },
+  "started_at": 1790578372.589059,
+  "finished_at": 1790578726.507021
+}

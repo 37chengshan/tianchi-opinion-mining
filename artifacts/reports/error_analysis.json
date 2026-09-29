@@ -1,0 +1,170 @@
+{
+  "baseline_3fold": {
+    "score": {
+      "precision": 0.3640529091380652,
+      "recall": 0.6349517490952955,
+      "f1": 0.4627726798175724,
+      "correct": 4211,
+      "predicted": 11567,
+      "gold": 6632
+    },
+    "true_positive": 4211,
+    "false_positive": 7356,
+    "false_negative": 2421,
+    "missed_by_category": {
+      "功效": 479,
+      "使用体验": 450,
+      "整体": 341,
+      "价格": 318,
+      "物流": 296,
+      "包装": 155,
+      "气味": 152,
+      "服务": 76,
+      "其他": 63,
+      "成分": 43,
+      "尺寸": 19,
+      "真伪": 16,
+      "新鲜度": 13
+    },
+    "missed_by_polarity": {
+      "正面": 1859,
+      "负面": 447,
+      "中性": 115
+    },
+    "missed_by_aspect_type": {
+      "explicit": 1373,
+      "implicit": 1048
+    },
+    "false_positive_type": {
+      "span_or_unseen_opinion": 6407,
+      "wrong_category_or_polarity": 110,
+      "wrong_aspect_or_pair": 839
+    }
+  },
+  "neural_3fold": {
+    "score": {
+      "precision": 0.7660244535012968,
+      "recall": 0.6234921592279855,
+      "f1": 0.6874480465502909,
+      "correct": 4135,
+      "predicted": 5398,
+      "gold": 6632
+    },
+    "true_positive": 4135,
+    "false_positive": 1263,
+    "false_negative": 2497,
+    "missed_by_category": {
+      "整体": 714,
+      "使用体验": 457,
+      "功效": 404,
+      "价格": 264,
+      "物流": 176,
+      "包装": 109,
+      "气味": 98,
+      "真伪": 79,
+      "其他": 65,
+      "服务": 59,
+      "成分": 36,
+      "尺寸": 23,
+      "新鲜度": 13
+    },
+    "missed_by_polarity": {
+      "正面": 1891,
+      "负面": 469,
+      "中性": 137
+    },
+    "missed_by_aspect_type": {
+      "implicit": 1566,
+      "explicit": 931
+    },
+    "false_positive_type": {
+      "span_or_unseen_opinion": 911,
+      "wrong_aspect_or_pair": 138,
+      "wrong_category_or_polarity": 214
+    }
+  },
+  "baseline_5fold": {
+    "score": {
+      "precision": 0.3626150035385704,
+      "recall": 0.6180639324487334,
+      "f1": 0.4570695807314897,
+      "correct": 4099,
+      "predicted": 11304,
+      "gold": 6632
+    },
+    "true_positive": 4099,
+    "false_positive": 7205,
+    "false_negative": 2533,
+    "missed_by_category": {
+      "功效": 497,
+      "使用体验": 437,
+      "价格": 361,
+      "物流": 338,
+      "整体": 318,
+      "包装": 173,
+      "气味": 170,
+      "服务": 84,
+      "其他": 63,
+      "成分": 47,
+      "尺寸": 18,
+      "真伪": 14,
+      "新鲜度": 13
+    },
+    "missed_by_polarity": {
+      "正面": 1982,
+      "负面": 438,
+      "中性": 113
+    },
+    "missed_by_aspect_type": {
+      "explicit": 1513,
+      "implicit": 1020
+    },
+    "false_positive_type": {
+      "span_or_unseen_opinion": 6419,
+      "wrong_category_or_polarity": 117,
+      "wrong_aspect_or_pair": 669
+    }
+  },
+  "neural_5fold": {
+    "score": {
+      "precision": 0.745888423089326,
+      "recall": 0.6975271411338962,
+      "f1": 0.7208976157082748,
+      "correct": 4626,
+      "predicted": 6202,
+      "gold": 6632
+    },
+    "true_positive": 4626,
+    "false_positive": 1576,
+    "false_negative": 2006,
+    "missed_by_category": {
+      "整体": 502,
+      "使用体验": 379,
+      "功效": 358,
+      "价格": 239,
+      "物流": 134,
+      "包装": 95,
+      "气味": 83,
+      "其他": 63,
+      "真伪": 51,
+      "服务": 45,
+      "成分": 23,
+      "尺寸": 21,
+      "新鲜度": 13
+    },
+    "missed_by_polarity": {
+      "正面": 1478,
+      "负面": 405,
+      "中性": 123
+    },
+    "missed_by_aspect_type": {
+      "explicit": 788,
+      "implicit": 1218
+    },
+    "false_positive_type": {
+      "span_or_unseen_opinion": 1136,
+      "wrong_aspect_or_pair": 181,
+      "wrong_category_or_polarity": 259
+    }
+  }
+}

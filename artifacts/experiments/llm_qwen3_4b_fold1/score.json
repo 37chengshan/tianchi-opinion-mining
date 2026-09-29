@@ -1,0 +1,23 @@
+{
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "adapter_path": "artifacts/llm_adapters/qwen3_4b_fold1_3fold",
+  "valid_fold": 1,
+  "n_splits": 3,
+  "scored_ids": 1077,
+  "parse_failures": 0,
+  "predicted_quadruples": 2023,
+  "gold_quadruples": 2194,
+  "state_counts": {
+    "explicit": 439,
+    "implicit-A": 1550,
+    "implicit-O": 34
+  },
+  "score": {
+    "precision": 0.6688086999505685,
+    "recall": 0.6166818596171376,
+    "f1": 0.6416884040787288,
+    "correct": 1353,
+    "predicted": 2023,
+    "gold": 2194
+  }
+}

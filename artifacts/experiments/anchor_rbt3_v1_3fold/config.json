@@ -1,0 +1,33 @@
+{
+  "name": "anchor_rbt3_v1_3fold",
+  "config": {
+    "model_name": "hfl/rbt3",
+    "max_length": 96,
+    "batch_size": 4,
+    "gradient_accumulation": 2,
+    "epochs": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0008,
+    "weight_decay": 0.01,
+    "trainable_layers": 2,
+    "max_span_length": 10,
+    "span_top_k": 10,
+    "beam_top_k": 3,
+    "relation_top_k": 2,
+    "span_loss_weight": 0.65,
+    "relation_loss_weight": 1.0,
+    "seed": 42,
+    "device": "auto",
+    "enabled_fixes": [
+      "official_offsets",
+      "implicit_opinion_sentinel",
+      "multi_relation"
+    ],
+    "use_official_offsets": true,
+    "use_implicit_opinion_sentinel": true,
+    "preserve_multi_relation": true
+  },
+  "config_hash": "f4de4a32fbf294b7070544d998fe2437de1d03eb3138d35e5dde588d63fefa85",
+  "fold_assignments": "/Users/cc/code/tianchi-opinion-mining/artifacts/reports/fold_assignments_seed42.json",
+  "composition": "B1+B2+B3 only; no architecture/loss/threshold change"
+}

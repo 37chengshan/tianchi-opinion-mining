@@ -1,0 +1,249 @@
+{
+  "candidate_count": 404141,
+  "candidate_id_count": 3229,
+  "category_metrics": {
+    "价格": {
+      "f1": 0.7430207587687903,
+      "fn": 177,
+      "fp": 182,
+      "gold": 696,
+      "precision": 0.7403708987161198,
+      "predicted": 701,
+      "recall": 0.7456896551724138,
+      "tp": 519
+    },
+    "使用体验": {
+      "f1": 0.6329113924050632,
+      "fn": 417,
+      "fp": 308,
+      "gold": 1042,
+      "precision": 0.669882100750268,
+      "predicted": 933,
+      "recall": 0.5998080614203455,
+      "tp": 625
+    },
+    "其他": {
+      "f1": 0.0,
+      "fn": 65,
+      "fp": 0,
+      "gold": 65,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "功效": {
+      "f1": 0.5293644408688657,
+      "fn": 397,
+      "fp": 188,
+      "gold": 726,
+      "precision": 0.6363636363636364,
+      "predicted": 517,
+      "recall": 0.453168044077135,
+      "tp": 329
+    },
+    "包装": {
+      "f1": 0.5454545454545455,
+      "fn": 105,
+      "fp": 45,
+      "gold": 195,
+      "precision": 0.6666666666666666,
+      "predicted": 135,
+      "recall": 0.46153846153846156,
+      "tp": 90
+    },
+    "尺寸": {
+      "f1": 0.0,
+      "fn": 24,
+      "fp": 1,
+      "gold": 24,
+      "precision": 0.0,
+      "predicted": 1,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "成分": {
+      "f1": 0.6238532110091743,
+      "fn": 27,
+      "fp": 14,
+      "gold": 61,
+      "precision": 0.7083333333333334,
+      "predicted": 48,
+      "recall": 0.5573770491803278,
+      "tp": 34
+    },
+    "整体": {
+      "f1": 0.8029350104821802,
+      "fn": 524,
+      "fp": 604,
+      "gold": 2822,
+      "precision": 0.791867677463818,
+      "predicted": 2902,
+      "recall": 0.8143160878809355,
+      "tp": 2298
+    },
+    "新鲜度": {
+      "f1": 0.0,
+      "fn": 13,
+      "fp": 1,
+      "gold": 13,
+      "precision": 0.0,
+      "predicted": 1,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "服务": {
+      "f1": 0.4246575342465753,
+      "fn": 55,
+      "fp": 29,
+      "gold": 86,
+      "precision": 0.5166666666666667,
+      "predicted": 60,
+      "recall": 0.36046511627906974,
+      "tp": 31
+    },
+    "气味": {
+      "f1": 0.6320754716981132,
+      "fn": 91,
+      "fp": 65,
+      "gold": 225,
+      "precision": 0.6733668341708543,
+      "predicted": 199,
+      "recall": 0.5955555555555555,
+      "tp": 134
+    },
+    "物流": {
+      "f1": 0.7624750499001995,
+      "fn": 134,
+      "fp": 104,
+      "gold": 516,
+      "precision": 0.7860082304526749,
+      "predicted": 486,
+      "recall": 0.7403100775193798,
+      "tp": 382
+    },
+    "真伪": {
+      "f1": 0.641025641025641,
+      "fn": 61,
+      "fp": 51,
+      "gold": 161,
+      "precision": 0.6622516556291391,
+      "predicted": 151,
+      "recall": 0.6211180124223602,
+      "tp": 100
+    }
+  },
+  "config_hash": "a57053234e22e918ccbaff7eb0a626c310d1993d8ea976843945fb0c0bd3bc3f",
+  "delta_vs_anchor_same_fold_baseline": {
+    "f1": 0.02412958152428213,
+    "fn": -407,
+    "fp": 329,
+    "gold": 0,
+    "precision": -0.025561460348378584,
+    "predicted": 736,
+    "recall": 0.061369119420989104,
+    "tp": 407
+  },
+  "f1": 0.711577628074573,
+  "fn": 2090,
+  "fold_isolation_verified": true,
+  "fold_reports": [
+    {
+      "fold": 1,
+      "score": {
+        "f1": 0.7055984555984557,
+        "fn": 732,
+        "fp": 488,
+        "gold": 2194,
+        "precision": 0.7497435897435898,
+        "predicted": 1950,
+        "recall": 0.6663628076572471,
+        "tp": 1462
+      },
+      "valid_ids": 1077
+    },
+    {
+      "fold": 2,
+      "score": {
+        "f1": 0.7061556329849012,
+        "fn": 704,
+        "fp": 561,
+        "gold": 2224,
+        "precision": 0.7304180682364247,
+        "predicted": 2081,
+        "recall": 0.6834532374100719,
+        "tp": 1520
+      },
+      "valid_ids": 1076
+    },
+    {
+      "fold": 3,
+      "score": {
+        "f1": 0.7227241139680333,
+        "fn": 654,
+        "fp": 543,
+        "gold": 2214,
+        "precision": 0.7417974322396577,
+        "predicted": 2103,
+        "recall": 0.7046070460704607,
+        "tp": 1560
+      },
+      "valid_ids": 1076
+    }
+  ],
+  "fp": 1592,
+  "gold": 6632,
+  "name": "anchor_b2_implicit_o_3fold",
+  "oof_candidates_path": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/anchor_b2_implicit_o_3fold/evaluator/oof_candidates.json",
+  "precision": 0.7404629931529182,
+  "predicted": 6134,
+  "recall": 0.6848612786489746,
+  "report_path": "/Users/cc/code/tianchi-opinion-mining/artifacts/experiments/anchor_b2_implicit_o_3fold/evaluator/report.json",
+  "state_metrics": {
+    "dual-implicit": {
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "gold": 0,
+      "precision": 0.0,
+      "predicted": 0,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "explicit": {
+      "f1": 0.6626620297186214,
+      "fn": 677,
+      "fp": 390,
+      "gold": 1725,
+      "precision": 0.7287899860917941,
+      "predicted": 1438,
+      "recall": 0.6075362318840579,
+      "tp": 1048
+    },
+    "implicit-A": {
+      "f1": 0.7370115929583512,
+      "fn": 1302,
+      "fp": 1148,
+      "gold": 4735,
+      "precision": 0.7493996943898712,
+      "predicted": 4581,
+      "recall": 0.725026399155227,
+      "tp": 3433
+    },
+    "implicit-O": {
+      "f1": 0.42508710801393734,
+      "fn": 111,
+      "fp": 54,
+      "gold": 172,
+      "precision": 0.5304347826086957,
+      "predicted": 115,
+      "recall": 0.3546511627906977,
+      "tp": 61
+    }
+  },
+  "thresholds": {
+    "explicit": 0.753,
+    "implicit": 0.738
+  },
+  "tp": 4542
+}

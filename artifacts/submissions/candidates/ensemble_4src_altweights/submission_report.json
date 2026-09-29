@@ -1,0 +1,88 @@
+{
+  "name": "ensemble_4src_altweights",
+  "runs": [
+    "artifacts/experiments/anchor_wwm_long_5fold",
+    "artifacts/experiments/anchor_wwm_long_3fold",
+    "artifacts/experiments/anchor_wwm_5fold",
+    "artifacts/experiments/anchor_macbert_5fold"
+  ],
+  "n_splits": 5,
+  "weight_candidates": [
+    {
+      "weights": [
+        1.0,
+        1.0,
+        0.5,
+        0.4
+      ],
+      "crossfit_f1": 0.7753028526768267
+    }
+  ],
+  "chosen_weights": [
+    1.0,
+    1.0,
+    0.5,
+    0.4
+  ],
+  "crossfit_f1": 0.7753028526768267,
+  "crossfit_detail": {
+    "f1": 0.7753028526768267,
+    "precision": 0.8048028557520688,
+    "recall": 0.7478890229191797,
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.806,
+        "implicit_threshold": 0.78,
+        "f1": 0.7611527832609554
+      },
+      {
+        "fold": 2,
+        "threshold": 0.811,
+        "implicit_threshold": 0.759,
+        "f1": 0.7724084177708495
+      },
+      {
+        "fold": 3,
+        "threshold": 0.853,
+        "implicit_threshold": 0.769,
+        "f1": 0.7726374060893634
+      },
+      {
+        "fold": 4,
+        "threshold": 0.853,
+        "implicit_threshold": 0.78,
+        "f1": 0.7820069204152249
+      },
+      {
+        "fold": 5,
+        "threshold": 0.853,
+        "implicit_threshold": 0.78,
+        "f1": 0.7879968823070927
+      }
+    ]
+  },
+  "in_sample_thresholds": {
+    "explicit": 0.847,
+    "implicit": 0.759,
+    "state": {
+      "explicit": 0.847,
+      "implicit-A": 0.759,
+      "implicit-O": 0.795,
+      "dual-implicit": 1.0
+    },
+    "in_sample_f1_not_strict": 0.7789917277977212
+  },
+  "submission": {
+    "path": "artifacts/submissions/candidates/ensemble_4src_altweights/Result.csv",
+    "sha256": "bc783c8084e74aa97722781d0bebb7a13d4fdea054424de2575a77029384dc60",
+    "bytes": 137130,
+    "validation": {
+      "ids": 2237,
+      "rows": 4301,
+      "empty_ids": 138,
+      "predicted_quadruples": 4163
+    }
+  },
+  "candidate_id": "candidate-bc783c8084e7-da56f5ae2ac2"
+}

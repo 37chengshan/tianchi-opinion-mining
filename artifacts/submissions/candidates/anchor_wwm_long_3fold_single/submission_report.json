@@ -1,0 +1,32 @@
+{
+  "output": "artifacts/submissions/candidates/anchor_wwm_long_3fold_single/Result.csv",
+  "sources": [
+    {
+      "name": "anchor_wwm_long_3fold",
+      "path": "artifacts/experiments/anchor_wwm_long_3fold/test_candidates.json"
+    }
+  ],
+  "weights": null,
+  "bonus": 0.0,
+  "thresholds": {
+    "explicit": 0.859,
+    "implicit": 0.848,
+    "state": {
+      "explicit": 0.859,
+      "implicit-A": 0.848,
+      "implicit-O": 0.864,
+      "dual-implicit": 1.0
+    }
+  },
+  "candidate_ids_covered": 2237,
+  "predicted_ids": 2051,
+  "predicted_quadruples": 3880,
+  "sha256": "afcaaf713924beef694fd3ff6ab7108d68f3182644b214b52e0777a175b0af6c",
+  "bytes": 128474,
+  "validation": {
+    "ids": 2237,
+    "rows": 4066,
+    "empty_ids": 186,
+    "predicted_quadruples": 3880
+  }
+}

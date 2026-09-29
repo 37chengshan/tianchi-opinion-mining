@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "name": "wwm5",
+      "path": "artifacts/experiments/anchor_wwm_5fold/oof_candidates.json"
+    },
+    {
+      "name": "macbert5",
+      "path": "artifacts/experiments/anchor_macbert_5fold/oof_candidates.json"
+    }
+  ],
+  "weights": null,
+  "bonus": 0.0,
+  "n_splits": 5,
+  "merged_candidates": 1234251,
+  "crossfit": {
+    "f1": 0.7535719772622522,
+    "precision": 0.7680864390854996,
+    "recall": 0.7395958986731002,
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.837,
+        "implicit_threshold": 0.785,
+        "f1": 0.7408859270874165
+      },
+      {
+        "fold": 2,
+        "threshold": 0.837,
+        "implicit_threshold": 0.774,
+        "f1": 0.7496038034865293
+      },
+      {
+        "fold": 3,
+        "threshold": 0.811,
+        "implicit_threshold": 0.753,
+        "f1": 0.7473118279569892
+      },
+      {
+        "fold": 4,
+        "threshold": 0.837,
+        "implicit_threshold": 0.753,
+        "f1": 0.7608133086876155
+      },
+      {
+        "fold": 5,
+        "threshold": 0.8,
+        "implicit_threshold": 0.753,
+        "f1": 0.7684130599848139
+      }
+    ]
+  },
+  "in_sample_reference_not_strict": {
+    "f1": 0.7564465529114698,
+    "threshold": 0.837,
+    "implicit_threshold": 0.753
+  },
+  "per_source": {
+    "wwm5": {
+      "path": "artifacts/experiments/anchor_wwm_5fold/oof_candidates.json",
+      "crossfit_f1": 0.7535945226321795,
+      "in_sample_f1_not_strict": 0.7563948239542583
+    },
+    "macbert5": {
+      "path": "artifacts/experiments/anchor_macbert_5fold/oof_candidates.json",
+      "crossfit_f1": 0.7370059134765017,
+      "in_sample_f1_not_strict": 0.740867137206236
+    }
+  },
+  "overlap": {
+    "tp_intersection": 4364,
+    "union_tp": 5015
+  }
+}

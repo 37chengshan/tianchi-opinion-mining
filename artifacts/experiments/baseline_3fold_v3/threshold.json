@@ -1,0 +1,32 @@
+{
+  "threshold": 0.909,
+  "implicit_threshold": 0.587,
+  "score": {
+    "precision": 0.3651513829508769,
+    "recall": 0.6310313630880579,
+    "f1": 0.46260984911291664,
+    "correct": 4185,
+    "predicted": 11461,
+    "gold": 6632
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train": 2152,
+      "valid": 1077,
+      "candidate_rows": 6420
+    },
+    {
+      "fold": 2,
+      "train": 2153,
+      "valid": 1076,
+      "candidate_rows": 6107
+    },
+    {
+      "fold": 3,
+      "train": 2153,
+      "valid": 1076,
+      "candidate_rows": 6821
+    }
+  ]
+}

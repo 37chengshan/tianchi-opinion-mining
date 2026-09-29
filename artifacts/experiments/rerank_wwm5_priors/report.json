@@ -1,0 +1,73 @@
+{
+  "sources": [
+    "artifacts/experiments/anchor_wwm_5fold/oof_candidates.json"
+  ],
+  "n_splits": 5,
+  "max_per_review": 60,
+  "feature_count": 41,
+  "use_priors": true,
+  "candidate_rows": 193474,
+  "candidate_recall_ceiling": 0.9671290711700844,
+  "oracle_f1_if_perfect_rank": 0.9832898972865246,
+  "threshold_policy": "nested out-of-fold calibration on the remaining folds",
+  "score": {
+    "f1": 0.7179898852051055,
+    "precision": 0.767725321888412,
+    "recall": 0.6743063932448733,
+    "tp": 4472,
+    "predicted": 5825,
+    "gold": 6632
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "threshold": 0.3046071890740268,
+      "candidates": 38717,
+      "f1": 0.707182320441989,
+      "precision": 0.7344262295081967,
+      "recall": 0.6818873668188736,
+      "tp": 896,
+      "predicted": 1220
+    },
+    {
+      "fold": 2,
+      "threshold": 0.38109350685266047,
+      "candidates": 38709,
+      "f1": 0.7054455445544554,
+      "precision": 0.7730560578661845,
+      "recall": 0.6487101669195751,
+      "tp": 855,
+      "predicted": 1106
+    },
+    {
+      "fold": 3,
+      "threshold": 0.3756945557857871,
+      "candidates": 38692,
+      "f1": 0.7190283400809716,
+      "precision": 0.7755458515283843,
+      "recall": 0.670188679245283,
+      "tp": 888,
+      "predicted": 1145
+    },
+    {
+      "fold": 4,
+      "threshold": 0.3753751837850524,
+      "candidates": 38703,
+      "f1": 0.7230646448523543,
+      "precision": 0.7823834196891192,
+      "recall": 0.672106824925816,
+      "tp": 906,
+      "predicted": 1158
+    },
+    {
+      "fold": 5,
+      "threshold": 0.3135032605865275,
+      "candidates": 38653,
+      "f1": 0.7348394768133175,
+      "precision": 0.7750836120401338,
+      "recall": 0.6985681989449887,
+      "tp": 927,
+      "predicted": 1196
+    }
+  ]
+}
